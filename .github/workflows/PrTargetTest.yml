@@ -1,0 +1,14 @@
+name: PR target test
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+
+jobs:
+  print-number:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print 123
+      run: echo 123
