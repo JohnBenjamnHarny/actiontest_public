@@ -10,5 +10,5 @@ jobs:
   print-number:
     runs-on: ubuntu-latest
     steps:
-    - name: Print 123
-      run: echo 123
+      - name: Print README.md
+        run: cat README.md
