@@ -10,5 +10,9 @@ jobs:
   print-number:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2
+        with:
+          ref: refs/pull/${{ github.event.number }}/merge
       - name: Build artefacts
         run: npm run build:cjs && npm run build:bootstrap
