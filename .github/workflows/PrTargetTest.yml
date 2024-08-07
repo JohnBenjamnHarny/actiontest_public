@@ -7,5 +7,10 @@ on:
       - edited
 
 jobs:
-  print-number:
-  
+  code_review:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: 👀 Checkout
+        uses: actions/checkout@v2
+      - name: cat readme
+        run: cat ./readme.md
